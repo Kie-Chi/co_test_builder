@@ -1,0 +1,31 @@
+{
+    "type": "verilog",
+    "is_flow": false,
+    "xilinx_path": "D:\\Xilinx\\14.7\\ISE_DS\\ISE",
+    "logisim_path": "util\\logisim-generic-2.7.1.jar",
+    "mars_path": "util\\mars.jar",
+    "circ_dir": "circ",
+    "verilog_dir": "..\\..\\CPU\\P4",
+    "self_util": "util\\testcodeplus.exe",
+    "self_dir": "self",
+    "random_set": {
+        "cal_r": ["add", "sub"],
+        "cal_i": ["ori"],
+        "lui": ["lui"],
+        "store": ["sw"],
+        "load": ["lw"],
+        "branch": ["beq"],
+        "j_l": ["jal"],
+        "j_r": ["jr"],
+        "nop": ["nop"]
+    },
+    "unit_set": {
+        "set_test": ["cal_i", "lui"],
+        "arth_test": ["cal_r"],
+        "mem_test": ["store", "load"],
+        "branch_test": ["branch"],
+        "jump_test": ["j_l", "j_r"]
+    },
+    "tb": 1,
+    "test_times": 10
+}
